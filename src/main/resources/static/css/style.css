@@ -1,0 +1,153 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+#menuAll{
+    padding-top: 80px;
+}
+header{
+    background-color: #95999c;
+    min-height: 60px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 1px 3px 0 #4e555b;
+    position: fixed;
+    z-index: 10;
+    display: inline-flex;
+}
+.ico{
+    height: 66px;
+    margin-top: 7px;
+    margin-left: 15px;
+    padding: 0 0;
+}
+.logout{
+    position: absolute;
+    right: 10px;
+    margin-top: 25px;
+}
+#menuVertical{
+    width: 70px;
+    height: auto;
+    position: fixed;
+    z-index: 5;
+    top: 80px;
+}
+#menuVertical ul{
+    display: block;
+    width: 55px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+
+#menuVertical ul li{
+    display: block;
+    width: 85px;
+    position: relative;
+}
+
+#menuVertical ul li a{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    color: #383d41;
+    line-height: 2em;
+    padding: 10px 15px;
+    background: lightgray;
+    text-decoration: none;
+}
+
+#menuVertical ul li a:hover,
+#menuVertical ul li:hover a{
+    background: #95999c;
+    color: #fff;
+}
+
+#menuVertical ul li ul{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    display: none;
+    width: auto;
+}
+
+#menuVertical ul li:hover ul{
+    display: block;
+}
+
+#menuVertical ul li ul li a{
+    white-space: nowrap;
+    text-transform: none;
+    padding: 10px 20px;
+    width: 80px;
+}
+
+#menuVertical ul li ul li a:hover{
+    background: #95999c;
+    color: #fff;
+}
+.menu{
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: lightgray;
+    box-shadow: 1px 2px 3px #888;
+    position: fixed;
+    top: 79px;
+    z-index: 3;
+}
+
+.footer{
+    position: absolute;
+    width: 150px;
+    height: 88px;
+    bottom: -29px;
+    background: lightgray;
+    margin-bottom: 78px;
+    z-index: 13;
+    border-top: 1px solid rgb(9, 42, 51);
+    color: rgb(52, 100, 113);
+    text-align: center;
+    padding-top: 22px;
+}
+
+table {
+    border-spacing: 0;
+    empty-cells: hide;
+}
+td {
+    padding: 5px 10px;
+    text-align: center;
+    border-bottom: 1px solid #343a40;
+    transition: all 0.5s linear;
+}
+td:first-child {
+    text-align: left;
+    color: #343a40;
+    font-weight: bold;
+}
+th {
+    padding: 5px 10px;
+    color: #343a40;
+    border-bottom: 1px solid #343a40;
+}
+td:nth-child(even) {
+    background: #95999c;
+}
+td:nth-child(odd) {
+    background: lightgray;
+}
+th:nth-child(even)  {
+    background: #95999c;
+}
+th:nth-child(odd)  {
+    background: lightgray;
+}

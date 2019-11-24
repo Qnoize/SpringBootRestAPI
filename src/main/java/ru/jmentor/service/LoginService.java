@@ -1,0 +1,1 @@
+package ru.jmentor.service;import ru.jmentor.form.LoginForm;import ru.jmentor.transfer.TokenDto;public interface LoginService {    TokenDto login(LoginForm loginForm);}
