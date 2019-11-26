@@ -9,7 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 import ru.jmentor.form.LoginForm;
 import ru.jmentor.service.LoginService;
 import ru.jmentor.transfer.TokenDto;
-
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
@@ -34,7 +33,7 @@ public class LoginController {
     }
 
     @PostMapping("/")
-    public ResponseEntity<TokenDto> login(@RequestBody LoginForm loginForm){
+    public  ResponseEntity<TokenDto> login(@ModelAttribute LoginForm loginForm){
         return ResponseEntity.ok(loginService.login(loginForm));
     }
 }
