@@ -1,1 +1,0 @@
-package ru.jmentor.repository;import org.springframework.data.jpa.repository.JpaRepository;import ru.jmentor.model.Token;import java.util.Optional;public interface TokensRepository extends JpaRepository<Token, Long> {    Optional<Token> findOneByValue(String name);}

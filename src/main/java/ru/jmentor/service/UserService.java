@@ -4,10 +4,16 @@ import ru.jmentor.model.User;
 import java.util.List;
 
 public interface UserService {
-    List<User> getAllUsers();
-    void saveUser(User user);
-    User getById(Long id);
-    void deleteUserById(Long id);
-    void editUser(User user);
-    User getByLogin(String userName);
+
+    List<User> getAll();
+
+    User findById(Long id);
+
+    Long delete(Long id);
+
+    User edit(User user);
+
+    User findByUsername(String username);
+
+    User register(User user);
 }
