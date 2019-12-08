@@ -23,7 +23,7 @@ public class LoginRestController {
     @PostMapping
     public ResponseEntity<?> authConnect(
             @RequestBody AuthenticationRequestDto requestDto,
-            HttpServletRequest request) throws IOException {
+            HttpServletRequest request) {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -44,15 +44,6 @@ public class LoginRestController {
         response.put("firstName", userDto.getFirstName());
         response.put("lastName", userDto.getLastName());
 
-        if(userDto != null){
-            if (userDto.getUserRole().contains("ROLE_ADMIN")) {
-                return ResponseEntity.ok(response);
-            }
-            else {
-                return ResponseEntity.ok(response);
-            }
-        }
         return ResponseEntity.ok(response);
     }
-
 }

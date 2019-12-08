@@ -1,1 +1,0 @@
-$('adminBth').click(function() {    let role = JSON.parse(sessionStorage.tokenData).userRole;    if(role.includes("USER")){        location.href = 'http://localhost:8080/userHome';    } else if(role.includes("ADMIN")){        location.href = 'http://localhost:8080/admin';    }});
