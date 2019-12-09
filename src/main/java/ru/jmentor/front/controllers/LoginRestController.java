@@ -10,7 +10,6 @@ import ru.jmentor.front.dto.AuthenticationRequestDto;
 import ru.jmentor.front.dto.UserDto;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
